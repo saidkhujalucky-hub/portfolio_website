@@ -1,0 +1,67 @@
+.project-gallery {
+  display: grid;
+  gap: 26px;
+}
+.gallery-project {
+  overflow: hidden;
+  border: 1px solid #a68f6a66;
+  background: linear-gradient(145deg, #253441, #18232e 75%);
+}
+.modal-card .gallery-link {
+  display: block;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+.gallery-link:focus-visible {
+  outline-offset: -3px;
+}
+.gallery-preview {
+  aspect-ratio: 16 / 8.5;
+  overflow: hidden;
+  background: #0f1c25;
+  border-bottom: 1px solid #a68f6a4d;
+}
+.gallery-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.gallery-content {
+  padding: clamp(17px, 4vw, 27px);
+}
+.gallery-kind {
+  font-size: 10px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: #e2c897;
+}
+.modal-card .gallery-content h3 {
+  margin: 6px 0 8px;
+  font: 400 clamp(26px, 4vw, 33px)/1.12 Georgia, serif;
+  color: #f5efe5;
+}
+.modal-card .gallery-content p {
+  margin: 0 0 10px;
+  line-height: 1.55;
+}
+.gallery-content small {
+  display: block;
+  color: #b5bdc6;
+  font-size: 11px;
+}
+.gallery-action {
+  display: inline-flex;
+  align-items: center;
+  gap: .6em;
+  margin-top: 14px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ae9876;
+  color: #f3dab0;
+  font-size: 13px;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .gallery-link:hover img {transform: scale(1.025)}
+}
